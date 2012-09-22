@@ -21,3 +21,13 @@ Known issues
 	your server.  For the canned examples, you can hit my server to see how it works
 	by uncommenting two lines in snakeCompute.php...
 
+
+If you end up using some of this code for research, please cite my MarkupSVG paper
+@article{kim2011, 
+author = {Edward Kim and Xiaolei Huang and Gang Tan}, 
+title = {Markup SVG - An Online Content-Aware Image Abstraction and Annotation Tool}, 
+journal = {IEEE Transactions on Multimedia}, 
+volume = {13}, 
+number = {5}, 
+year = {2011}, 
+pages = {993-1006} }
