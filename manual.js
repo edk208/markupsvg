@@ -3,12 +3,24 @@ var padtop = 0;
 
 function manualPoly(ev) {
 	var svgobj = document;
-
-       	var ex = ev.clientX;
-       	var ey = ev.clientY;
+    var ex = ev.pageX;
+    var ey = ev.pageY;
+    
+    var childPos = $("#area").position();
+    var parentPos = $("#area").parent().position();
+    
+    var difftop = childPos.top - parentPos.top;
+    var diffleft = childPos.left - parentPos.left;
+    
+    ex = ex - diffleft;
+    ey = ey - difftop;
+    
 	var g = ev.target.parentNode;
 	var xpos = ex;
 	var ypos = ey;
+    //alert (ex + ', ' + ey);
+    //alert(ey);
+    
 	//alert(ex+"x "+ey+"y "+xpos+"sx "+ypos+"sy "+xval+"transx "+yval+"transy");
 
 	var circle = document.createElementNS("http://www.w3.org/2000/svg",'circle');
